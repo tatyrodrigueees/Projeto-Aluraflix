@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="./style.css">
+  <title>Tabela jogos</title>
+  <link rel="shortcut icon" href="./img/logoTitulo.png">
+</head>
+<body>
+  <h2 data-text="Pontuação de Jogos" class="animate-text">Pontuação de Jogos</h2>
+
+  <div class="form-wrapper">
+    <input id="playerName" name="playerName" placeholder="Digite o nome do jogador">
+    <button onClick="addPlayers()">Adicionar jogador</button>
+    <button onClick="startAgain()">Reiniciar Pontuação</button>
+    <button onClick="resetData()">Limpar tabela</button>
+  </div>
+
+  <table style="width: 90%">
+    <thead>
+      <tr>
+        <th>Nome</th>
+        <th>Vitórias</th>
+        <th>Empates</th>
+        <th>Derrotas</th>
+        <th>Pontos</th>
+        <th colspan="3">Ações</th>
+      </tr>
+    </thead>
+    <tbody id="tabelaJogadores">
+    </tbody>
+  </table>
+    <script src="./script.js"></script>
+</body>
+</html>

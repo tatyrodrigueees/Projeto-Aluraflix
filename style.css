@@ -1,0 +1,102 @@
+* {
+  text-align: center;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto Mono", monospace;
+  min-height: 100vh;
+  background-image: url("https://trafoos.com/wp-content/uploads/2020/11/Cyberpunk-Wallpaper-3.jpg");
+  background-color: #111;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+}
+
+h2 {
+  font-family: serif;
+}
+
+.animate-text {
+  position:relative;
+  font-size:3em;
+  color: #4B0082;
+}
+
+.animate-text::before {
+  content: attr(data-text);
+  position: absolute;
+  color: #fff;
+  width: 260px;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 2.5px solid #fff;
+  animation: animarElemento 6s linear infinite;
+  filter: drop-shadow(0 0 10px #4B0082) drop-shadow(0 0 15px #fff)
+}
+
+@keyframes animarElemento {
+  0%,10%,100% {
+    width: 0;
+  }
+  70%,90% {
+    width: 30%;
+  }
+}
+
+table {
+  margin: auto;
+  border: 2px solid white;
+  border-collapse: collapse;
+  background-color: #0d0d0d;
+  opacity: 0.8;
+}
+
+
+
+th,
+tr,
+td {
+  border: solid 1px white;
+  color: white;
+  padding: 7px;
+}
+
+button {
+  color: #f6f6f6;
+  cursor: pointer;
+}
+
+input {
+  width: 200px;
+  height: 33px;
+  margin: 5px;
+}
+
+.form-wrapper {
+  margin: 30px auto;
+}
+
+.form-wrapper button {
+  background-color: #4B0082;
+  width: 200px;
+  height: 40px;
+  margin: 5px;
+}
+
+.form-wrapper button:hover {
+  opacity: 0.8;
+}
+
+.win {
+  background-color: #008000;
+}
+
+.tie {
+  background-color: #20B2AA;
+}
+
+.defeat {
+  background-color: #FF0000;
+}
